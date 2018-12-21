@@ -1,4 +1,6 @@
 <h1>Pokedex</h1>
 
-<h2>{{result.name}}</h2>
+<img src="{{pokemon.sprites.front_default}}" />
+<h2>{{pokemon.name}}</h2>
+<button {{action "getPokemon" "charmander"}}>Go!</button>
 {{outlet}}
