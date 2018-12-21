@@ -2,5 +2,12 @@
 
 <img src="{{pokemon.sprites.front_default}}" />
 <h2>{{pokemon.name}}</h2>
-<button {{action "getPokemon" "charmander"}}>Go!</button>
+<h3>Abilities</h3>
+<ul>
+    {{#each pokemon.abilities as |ability|}}
+        <li>{{ability.ability.name}}</li>
+    {{/each}}
+</ul>
+{{input value=pokename}}
+<button {{action "getPokemon" pokename}}>Go!</button>
 {{outlet}}
