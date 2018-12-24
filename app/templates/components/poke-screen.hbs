@@ -1,3 +1,7 @@
-<h1>{{display}}</h1>
+<ul>
+    {{#each display as |piece|}}
+        <li>{{piece}}</li>
+    {{/each}}
+</ul>
 
 {{yield}}

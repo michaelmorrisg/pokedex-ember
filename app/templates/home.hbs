@@ -13,6 +13,6 @@
     {{input value=pokename}}
     <button {{action "getPokemon" pokename}}>Go!</button>
 
-    <button {{action "changeComponent" pokemon.id.type.name}}>Type</button>
+    <button {{action "changeComponent" "type" pokemon}}>Type</button>
 </div>
 {{outlet}}
