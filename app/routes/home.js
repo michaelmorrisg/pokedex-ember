@@ -8,7 +8,7 @@ export default Route.extend({
         getPokemon(num){
             return $.get(`https://pokeapi.co/api/v2/pokemon/${num}/`).then(pokemon => {
             console.log(pokemon)
-            this.controller.set('pokemon', pokemon)    
+            this.controller.set('pokemon', pokemon)  
             return pokemon
             })
         }
