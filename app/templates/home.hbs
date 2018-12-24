@@ -3,7 +3,7 @@
 
     <img src="{{pokemon.sprites.front_default}}" />
     <h2>{{pokemon.name}}</h2>
-    {{poke-screen display=null}}
+    {{poke-screen display=display}}
     <h3>Abilities</h3>
     <ul>
         {{#each pokemon.abilities as |ability|}}
@@ -12,5 +12,7 @@
     </ul>
     {{input value=pokename}}
     <button {{action "getPokemon" pokename}}>Go!</button>
+
+    <button {{action "changeComponent" pokemon.id.type.name}}>Testing waffles</button>
 </div>
 {{outlet}}
