@@ -1,18 +1,16 @@
 <div class="main">
-    <h1>Pokedex</h1>
+    <div class="body">
+        <h1>Pokedex</h1>
 
-    <img src="{{pokemon.sprites.front_default}}" />
-    <h2>{{pokemon.name}}</h2>
-    {{poke-screen display=display}}
-    <h3>Abilities</h3>
-    <ul>
-        {{#each pokemon.abilities as |ability|}}
-            <li>{{ability.ability.name}}</li>
-        {{/each}}
-    </ul>
-    {{input value=pokename}}
-    <button {{action "getPokemon" pokename}}>Go!</button>
+        <div class="screen">
+            <img src="{{pokemon.sprites.front_default}}" />
+            {{poke-screen display=display}}
+        </div>
+            {{input value=pokename}}
+        <button {{action "getPokemon" pokename}}>Go!</button>
 
-    <button {{action "changeComponent" "type" pokemon}}>Type</button>
+        <button {{action "changeComponent" "type" pokemon}}>Type</button>
+        <button {{action "changeComponent" "ability" pokemon}}>Abilities</button>
+    </div>
 </div>
 {{outlet}}

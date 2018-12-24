@@ -16,9 +16,17 @@ export default Route.extend({
         changeComponent(input,pokemon){
             if(input==="type"){
                 var data = pokemon.types.map(obj => {
+                    obj.type.name = obj.type.name.charAt(0).toUpperCase() + obj.type.name.slice(1)
                     return obj.type.name
                 })
             }
+            if(input==="ability"){
+                var data = pokemon.abilities.map(obj => {
+                    obj.ability.name = obj.ability.name.charAt(0).toUpperCase() + obj.ability.name.slice(1)
+                    return obj.ability.name
+                })
+                }
+
             this.controller.set('display', data)
         }
     }
