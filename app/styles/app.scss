@@ -18,8 +18,15 @@
         outline: none;
         text-align: center;
         padding: 0px;
+        border: none;
+
+        &.btn-secondary {
+            background-color: blue;
+            color: white;
+        }
         &:active {
             background-color: yellow;
+            color: black;
         }
     }
 

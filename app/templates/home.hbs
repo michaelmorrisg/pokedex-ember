@@ -9,8 +9,8 @@
             {{input value=pokename}}
         <button {{action "getPokemon" pokename}}>Go!</button>
 
-        <button {{action "changeComponent" "type" pokemon}}>Type</button>
-        <button {{action "changeComponent" "ability" pokemon}}>Abilities</button>
+        <button class="btn-secondary" {{action "changeComponent" "type" pokemon}}>Type</button>
+        <button class="btn-secondary" {{action "changeComponent" "ability" pokemon}}>Abilities</button>
     </div>
 </div>
 {{outlet}}
