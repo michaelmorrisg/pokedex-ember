@@ -4,7 +4,7 @@
 
         <div class="screen">
             <img src="{{pokemon.sprites.front_default}}" />
-            {{poke-screen display=display}}
+            {{poke-screen display=display image=hasImage}}
         </div>
             {{input value=pokename}}
         <button {{action "getPokemon" pokename}}>Go!</button>

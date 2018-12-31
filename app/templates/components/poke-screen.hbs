@@ -2,6 +2,7 @@
     {{#each display as |piece|}}
         <li>{{piece}}</li>
     {{/each}}
+    <img src={{if image display ""}}>
 </ul>
 
 {{yield}}
