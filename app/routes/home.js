@@ -31,7 +31,6 @@ export default Route.extend({
                 }
             if(input==="sprite"){
                 var data = pokemon.sprites.front_shiny
-                console.log(data, 'data')
                 this.controller.set('hasImage', true)
             }
 
