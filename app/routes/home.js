@@ -26,6 +26,10 @@ export default Route.extend({
                     return obj.ability.name
                 })
                 }
+            if(input==="sprite"){
+                var data = pokemon.sprites.front_shiny
+                console.log(data, 'data')
+            }
 
             this.controller.set('display', data)
         }
